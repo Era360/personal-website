@@ -18,7 +18,7 @@ export default function Home() {
             <h3 className="absolute bottom-0 mt-2 mx-auto left-0 right-0 text-md font-bold bg-gray-950 translate-y-1 rounded">Elia Mkumbo</h3>
             <Image src='/img/elia.jpg' alt='Elia Profile' width={0} height={0} sizes='100vw' className='w-44 h-44 mx-auto rounded-full' />
           </div>
-          <h1 className="text-5xl font-bold text-white mb-8">I&#39;m a <TypingAnimation messages={[' Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
+          <h1 className="text-5xl font-bold text-white mb-8">I&#39;m a <TypingAnimation messages={['  Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
           <p className="text-2xl text-gray-400 mb-12">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
           <Link href="/projects" className="bg-blue-500 text-white py-2 px-8 rounded hover:bg-blue-700">View My Projects</Link>
           <div className="flex justify-center items-center mt-12">
