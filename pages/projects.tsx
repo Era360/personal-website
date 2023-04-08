@@ -45,20 +45,20 @@ function Projects() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="h-screen text-gray-900 dark:text-gray-50">
-                <h2 className="text-4xl font-bold text-center py-8">My Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-[80vh] p-5 mx-16 overflow-y-scroll">
+                <h2 className="text-2xl sm:text-4xl font-bold text-center py-8">My Projects</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-[80vh] p-2 sm:p-5 mx-2 sm:mx-16 overflow-y-scroll">
                     {projects.map((project, index) => (
                         <Link
                             href={project.link}
                             target='_blank'
                             id={project.title}
                             key={index}
-                            className="border-2 dark:border-none rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform"
+                            className="border-2 dark:border dark:border-opacity-20 dark:p-0.5 dark:border-gray-50 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform"
                         >
-                            <Image src={project.image} width={0} height={0} sizes='100vw' className='w-full' alt={project.title} />
-                            <div className="p-4">
-                                <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                                <p className="text-gray-600">{project.description}</p>
+                            <Image src={project.image} width={0} height={0} sizes='100vw' className='w-full rounded-t-lg' alt={project.title} />
+                            <div className="p-2 sm:p-4">
+                                <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
+                                <p className="text-gray-800 dark:text-gray-500">{project.description}</p>
                             </div>
                         </Link>
                     ))}

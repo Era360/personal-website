@@ -13,14 +13,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-sm sm:max-w-5xl mx-auto text-center">
           <div className='relative w-fit mx-auto rounded-full border-2 border-gray-900 dark:border-gray-50'>
             <h3 className="absolute bottom-0 mt-2 mx-auto left-0 right-0 text-md font-bold bg-gray-950 text-gray-50 translate-y-1 rounded">Elia Mkumbo</h3>
-            <Image src='/img/elia.jpg' alt='Elia Profile' width={0} height={0} sizes='100vw' className='w-44 h-44 mx-auto rounded-full' />
+            <Image src='/img/elia.jpg' alt='Elia Profile' width={0} height={0} sizes='100vw' className='w-32 h-32 sm:w-44 sm:h-44 mx-auto rounded-full' />
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-gray-50 mb-8">I&#39;m a <TypingAnimation messages={['  Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
-          <p className="text-2xl text-gray-700 dark:text-gray-400 mb-12">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
-          <Link href="/projects" className="bg-blue-500 text-gray-50 py-2 px-8 rounded hover:bg-blue-700">View My Projects</Link>
+          <h1 className="text-2xl sm:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-4 sm:mb-8">I&#39;m a <TypingAnimation messages={['  Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
+          <p className="text-lg sm:text-2xl text-gray-700 dark:text-gray-400 mb-12">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
+          <Link href="/projects" className="bg-blue-500 text-gray-50 px-5 py-2 sm:px-8 rounded hover:bg-blue-700">View My Projects</Link>
           <div className="flex justify-center items-center mt-12">
             <Link href="https://github.com/Era360" target='_blank' className="text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white mr-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
