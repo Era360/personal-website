@@ -1,5 +1,6 @@
 import TypingAnimation from '@/components/typing'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
       </Head>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-white mb-8">Hello, I&#39;m a <TypingAnimation messages={[' Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
+          <div className='relative w-fit mx-auto rounded-full border-2'>
+            <h3 className="absolute bottom-0 mt-2 mx-auto left-0 right-0 text-md font-bold bg-gray-950 translate-y-1 rounded">Elia Mkumbo</h3>
+            <Image src='/img/elia.jpg' alt='Elia Profile' width={0} height={0} sizes='100vw' className='w-44 h-44 mx-auto rounded-full' />
+          </div>
+          <h1 className="text-5xl font-bold text-white mb-8">I&#39;m a <TypingAnimation messages={[' Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
           <p className="text-2xl text-gray-400 mb-12">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
           <a href="/projects" className="bg-blue-500 text-white py-2 px-8 rounded hover:bg-blue-700">View My Projects</a>
           <div className="flex justify-center items-center mt-12">
