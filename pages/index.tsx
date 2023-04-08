@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <h1 className="text-5xl font-bold text-white mb-8">I&#39;m a <TypingAnimation messages={[' Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
           <p className="text-2xl text-gray-400 mb-12">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
-          <a href="/projects" className="bg-blue-500 text-white py-2 px-8 rounded hover:bg-blue-700">View My Projects</a>
+          <Link href="/projects" className="bg-blue-500 text-white py-2 px-8 rounded hover:bg-blue-700">View My Projects</Link>
           <div className="flex justify-center items-center mt-12">
             <Link href="https://github.com/Era360" target='_blank' className="text-gray-500 hover:text-white mr-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
