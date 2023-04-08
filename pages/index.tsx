@@ -10,14 +10,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-        <div className="max-w-md mx-auto text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Hello, I&#39;m a Python Developer</h1>
-          <p className="text-xl text-gray-700 mb-8">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
-          <a href="/projects" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">View My Projects</a>
-        </div>
-      </div> */}
-      {/* Dark */}
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-white mb-8">Hello, I&#39;m a <TypingAnimation messages={[' Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
