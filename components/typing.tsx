@@ -39,7 +39,7 @@ const TypingAnimation = ({ messages }: { messages: string[] }) => {
             <span className="text-gray-700">{text}</span>
             <span
                 className={`${blink ? "opacity-100" : "opacity-0"
-                    } p-0.5 bg-white`}
+                    } p-0.5 bg-gray-900 dark:bg-gray-50 `}
             >
 
             </span>

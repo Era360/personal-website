@@ -44,7 +44,7 @@ function Projects() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="h-screen">
+            <div className="h-screen text-gray-900 dark:text-gray-50">
                 <h2 className="text-4xl font-bold text-center py-8">My Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-[80vh] p-5 mx-16 overflow-y-scroll">
                     {projects.map((project, index) => (
