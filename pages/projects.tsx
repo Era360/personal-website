@@ -1,6 +1,7 @@
+import React from 'react'
 import Head from 'next/head';
 import Image from 'next/image';
-import React from 'react'
+import Link from 'next/link';
 
 function Projects() {
 
@@ -31,7 +32,7 @@ function Projects() {
             description:
                 "An NER Model for spoting out Entities in Swahili texts using Python and Spacy",
             image: "/img/sarufi_playground.png",
-            link: "https://example.com/project-2",
+            link: "#",
         }
     ];
 
@@ -47,9 +48,10 @@ function Projects() {
                 <h2 className="text-4xl font-bold text-center py-8">My Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-[80vh] p-5 mx-16 overflow-y-scroll">
                     {projects.map((project, index) => (
-                        <a
+                        <Link
                             href={project.link}
                             target='_blank'
+                            id={project.title}
                             key={index}
                             className="border-2 dark:border-none rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform"
                         >
@@ -58,7 +60,7 @@ function Projects() {
                                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                                 <p className="text-gray-600">{project.description}</p>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>
