@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Elia Mkumbo | Landing page</title>
+        <title>Elia Mkumbo | Home page</title>
         <meta name="description" content="A landing page for Elia Mkumbo's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
