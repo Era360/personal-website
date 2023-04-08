@@ -31,8 +31,8 @@ function Projects() {
             title: "Named Entity Recognition Model",
             description:
                 "An NER Model for spoting out Entities in Swahili texts using Python and Spacy",
-            image: "/img/sarufi_playground.png",
-            link: "#",
+            image: "/img/ner.png",
+            link: "https://neurotech-hq-swahili-ner-spacy-app-vjem52.streamlit.app/",
         }
     ];
 
