@@ -81,7 +81,7 @@ function Projects() {
             </Head>
             <div className="h-screen text-gray-900 dark:text-gray-50">
                 <h2 className="text-2xl sm:text-4xl font-bold text-center py-7">My Projects</h2>
-                <ul className='flex w-fit mx-auto mb-3'>
+                <ul className='hidden sm:flex w-fit mx-auto mb-3'>
                     <li
                         onClick={() => setactive_filter("all")}
                         className={`${active_filter === "all" && "bg-gray-700"} rounded font-semibold px-2 ml-6 cursor-pointer hover:bg-gray-800 transition-all`}>All</li>
