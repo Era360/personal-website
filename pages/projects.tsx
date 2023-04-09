@@ -33,6 +33,13 @@ function Projects() {
                 "An NER Model for spoting out Entities in Swahili texts using Python and Spacy",
             image: "/img/ner.png",
             link: "https://neurotech-hq-swahili-ner-spacy-app-vjem52.streamlit.app/",
+        },
+        {
+            title: "Space Pictures of the Day",
+            description:
+                "A simple web app utilizing NASA's API to show space pictures and description everyday",
+            image: "/img/pic_of_the_day.png",
+            link: "https://fredastro-13902.web.app/",
         }
     ];
 
