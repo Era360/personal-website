@@ -89,7 +89,7 @@ function Projects() {
                         filters.map((filter, index) => <li
                             key={index}
                             onClick={() => setactive_filter(filter.id)}
-                            className={`${active_filter === filter.id && "bg-gray-700"} rounded font-semibold px-2 ml-6 cursor-pointer hover:bg-gray-800 transition-all`}
+                            className={`${active_filter === filter.id && "bg-gray-700 text-gray-50"} rounded font-semibold px-2 ml-6 cursor-pointer hover:text-gray-50 hover:bg-gray-800 transition-all`}
                         >
                             {filter.title}
                         </li>)
