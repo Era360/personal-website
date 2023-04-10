@@ -17,7 +17,7 @@ export default function Home() {
         {/* Facebook tags */}
         <meta property="og:title" content="Elia Mkumbo&#39;s Portfolio - Web Development &amp; Machine Learning" />
         <meta property="og:description" content="I am a web developer who specializes in creating web applications with React, Next.js, HTML, and CSS. I also have experience with Python, TypeScript, Scikit-learn, and Spacy for machine learning and NLP tasks. Visit my portfolio to learn more about my work and experience." />
-        <meta property="og:image" content="https://www.mkumboelia.netlify.app/img/social_preview.jpg" />
+        <meta property="og:image" content="/img/social_preview.jpg" />
         <meta property="og:url" content="https://www.mkumboelia.netlify.app" />
         <meta property="og:type" content="website" />
         {/* End Facebook tags */}
@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Elia Mkumbo&#39;s Portfolio - Web Development &amp; Machine Learning" />
         <meta name="twitter:description" content="I am a web developer who specializes in creating web applications with React, Next.js, HTML, and CSS. I also have experience with Python, TypeScript, Scikit-learn, and Spacy for machine learning and NLP tasks. Visit my portfolio to learn more about my work and experience." />
-        <meta property="twitter:image" content="https://www.mkumboelia.netlify.app/img/social_preview.jpg" />
+        <meta property="twitter:image" content="/img/social_preview.jpg" />
         {/* End Twitter tags */}
       </Head>
       <div className="flex flex-col items-center justify-center min-h-screen">
