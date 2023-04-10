@@ -59,8 +59,15 @@ const projects: ProjectsType[] = [{
     link: "https://github.com/Era360/handTrackerModule",
     category: "open_source"
 },
+{
+    title: "Sarufi Python SDK",
+    description:
+        "A Python SDK to help you to interact with Sarufi (Chatbot creating platform)",
+    image: "/img/sarufi_python.png",
+    link: "https://github.com/Era360/sarufi-python-sdk",
+    category: "open_source"
+}
 ]
-
 function Projects() {
     const [active_filter, setactive_filter] = useState<string>("all")
     const [to_show_data, setto_show_data] = useState<ProjectsType[]>([...projects])
