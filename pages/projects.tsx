@@ -8,7 +8,7 @@ type ProjectsType = {
     description: string,
     image: string,
     link: string,
-    category: "web" | "ml" | "open_source"
+    category: "web" | "ml" | "open_source" | "game_dev"
 }
 
 const projects: ProjectsType[] = [{
@@ -68,10 +68,16 @@ const projects: ProjectsType[] = [{
     category: "open_source"
 }
 ]
+
 function Projects() {
     const [active_filter, setactive_filter] = useState<string>("all")
     const [to_show_data, setto_show_data] = useState<ProjectsType[]>([...projects])
-    const filters: Array<{ id: string, title: string }> = [{ id: "web", title: "Web Apps" }, { id: "open_source", title: "Open Source Contribution" }, { id: "ml", title: "Machine Learning" }]
+    const filters: Array<{ id: string, title: string }> = [
+        { id: "web", title: "Web Apps" },
+        { id: "open_source", title: "Open Source Contribution" },
+        { id: "ml", title: "Machine Learning" },
+        { id: "game_dev", title: "Game Development  " }
+    ]
 
     useEffect(() => {
         if (active_filter === "all") setto_show_data(projects)
