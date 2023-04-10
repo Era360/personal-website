@@ -7,10 +7,27 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Elia Mkumbo | Home page</title>
-        <meta name="description" content="A landing page for Elia Mkumbo's Portfolio" />
+        <title>Elia Mkumbo | Home portfolio page</title>
+        <meta charSet="utf-8" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="I am a web developer who specializes in creating web applications with React, Next.js, HTML, and CSS. I also have experience with Python, TypeScript, Scikit-learn, and Spacy for machine learning and NLP tasks. Visit my portfolio to learn more about my work and experience." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Facebook tags */}
+        <meta property="og:title" content="Elia Mkumbo&#39;s Portfolio - Web Development &amp; Machine Learning" />
+        <meta property="og:description" content="I am a web developer who specializes in creating web applications with React, Next.js, HTML, and CSS. I also have experience with Python, TypeScript, Scikit-learn, and Spacy for machine learning and NLP tasks. Visit my portfolio to learn more about my work and experience." />
+        <meta property="og:image" content="https://www.mkumboelia.netlify.app/img/social_preview.jpg" />
+        <meta property="og:url" content="https://www.mkumboelia.netlify.app" />
+        <meta property="og:type" content="website" />
+        {/* End Facebook tags */}
+        {/* Twitter tags */}
+        <meta name="twitter:creator" content="Elia Mkumbo" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Elia Mkumbo&#39;s Portfolio - Web Development &amp; Machine Learning" />
+        <meta name="twitter:description" content="I am a web developer who specializes in creating web applications with React, Next.js, HTML, and CSS. I also have experience with Python, TypeScript, Scikit-learn, and Spacy for machine learning and NLP tasks. Visit my portfolio to learn more about my work and experience." />
+        <meta property="twitter:image" content="https://www.mkumboelia.netlify.app/img/social_preview.jpg" />
+        {/* End Twitter tags */}
       </Head>
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="max-w-sm sm:max-w-5xl mx-auto text-center">
