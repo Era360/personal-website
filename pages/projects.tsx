@@ -66,6 +66,14 @@ const projects: ProjectsType[] = [{
     image: "/img/sarufi_python.png",
     link: "https://github.com/Era360/sarufi-python-sdk",
     category: "open_source"
+},
+{
+    title: "Help Dog Game",
+    description:
+        "A simple python game whereby the goal is to help a dog reach the bone faster.",
+    image: "/img/help_dog.png",
+    link: "https://github.com/Era360/Help-dog-game",
+    category: "game_dev"
 }
 ]
 
