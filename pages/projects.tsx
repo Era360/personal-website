@@ -20,6 +20,22 @@ const projects: ProjectsType[] = [{
     category: "web"
 },
 {
+    title: "Find Bible Scripture",
+    description:
+        "A web app to help you find bible reference simply by typing a small story you remember",
+    image: "/img/bible-scripture.png",
+    link: "https://find-bible-scripture.netlify.app/",
+    category: "web"
+},
+{
+    title: "Space Pictures of the Day",
+    description:
+        "A simple web app utilizing NASA's API to show space pictures and description everyday",
+    image: "/img/pic_of_the_day.png",
+    link: "https://fredastro-13902.web.app/",
+    category: "web"
+},
+{
     title: "ERP Web Application",
     description:
         "A fully functional ERP Web App built with React and Firebase",
@@ -44,17 +60,9 @@ const projects: ProjectsType[] = [{
     category: "ml"
 },
 {
-    title: "Space Pictures of the Day",
-    description:
-        "A simple web app utilizing NASA's API to show space pictures and description everyday",
-    image: "/img/pic_of_the_day.png",
-    link: "https://fredastro-13902.web.app/",
-    category: "web"
-},
-{
     title: "Python Hand Tracking Module",
     description:
-        "A Python module for tracking hand on the camera. It uses OpenCV and MediaPipe library",
+        "A Python module for tracking hand on the camera. It uses OpenCV and MediaPipe",
     image: "/img/hand_tracker.png",
     link: "https://github.com/Era360/handTrackerModule",
     category: "open_source"
@@ -118,8 +126,8 @@ function Projects() {
                 {/* End Twitter tags */}
             </Head>
             <div className="h-screen text-gray-900 dark:text-gray-50">
-                <h2 className="text-2xl sm:text-4xl font-bold text-center py-7">My Projects</h2>
-                <ul className='hidden sm:flex w-fit mx-auto mb-3'>
+                <h2 className="text-2xl font-bold text-center sm:text-4xl py-7">My Projects</h2>
+                <ul className='hidden mx-auto mb-3 sm:flex w-fit'>
                     <li
                         onClick={() => setactive_filter("all")}
                         className={`${active_filter === "all" && "bg-gray-700"} rounded font-semibold px-2 ml-6 cursor-pointer hover:bg-gray-800 transition-all`}>All</li>
@@ -144,7 +152,7 @@ function Projects() {
                         >
                             <Image src={project.image} width={0} height={0} sizes='100vw' className='w-full rounded-t-lg' alt={project.title} />
                             <div className="p-2 sm:p-4">
-                                <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
+                                <h3 className="mb-2 text-xl font-bold sm:text-2xl">{project.title}</h3>
                                 <p className="text-gray-800 dark:text-gray-500">{project.description}</p>
                             </div>
                         </Link>
