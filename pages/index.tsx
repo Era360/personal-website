@@ -37,7 +37,10 @@ export default function Home() {
           </div>
           <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-5xl dark:text-gray-50 sm:mb-8">I&#39;m a <TypingAnimation messages={['  Python', ' Typescript', ' Javascript', ' Machine Learning']} /> Developer</h1>
           <p className="mb-12 text-lg text-gray-700 sm:text-2xl dark:text-gray-400">I specialize in web development using React and Next.js, and I&#39;m also skilled in machine learning with scikit-learn and NLP with Spacy.</p>
-          <Link href="/projects" className="px-5 py-2 bg-blue-500 rounded text-gray-50 sm:px-8 hover:bg-blue-700">View My Projects</Link>
+          <div className='space-y-2'>
+            <Link href="/projects" className="block px-5 py-2 mx-auto bg-blue-500 rounded w-fit text-gray-50 sm:px-8 hover:bg-blue-700">View My Projects</Link>
+            <Link href="/activity" className="block px-5 py-2 mx-auto bg-gray-700 rounded w-fit text-gray-50 sm:px-8 hover:bg-blue-700">View My Code Activity</Link>
+          </div>
           <div className="flex items-center justify-center mt-12">
             <Link href="https://github.com/Era360" target='_blank' className="mr-16 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
