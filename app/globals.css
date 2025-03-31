@@ -1,10 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 18, 18, 18;
+  --background-end-rgb: 18, 18, 18;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* custom colors */
+  --color-primary: #6c63ff;
+  --color-secondary: #f8f8f8;
+  --color-dark: #121212;
+
+  /* Animation */
+  --animate-float: "float 6s ease-in-out infinite";
+
+  @keyframes float {
+    0% 100%: {
+      transform: "translateY(0)";
+    }
+    50%: {
+      transform: "translateY(-10px)";
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +41,80 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb));
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+}
+
+.moon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.scroll-container {
+  height: 100vh;
+  display: flex;
+}
+
+.left-section {
+  width: 40%;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 2rem;
+  z-index: 10;
+}
+
+.right-section {
+  margin-left: 40%;
+  width: 60%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 2rem;
+  z-index: 5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #6c63ff;
+}
+
+.project-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
