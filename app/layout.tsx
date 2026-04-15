@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Elia Mkumbo Portfolio",
   description: "Full Stack Developer Portfolio",
+  metadataBase: new URL("https://mkumboelia.com"),
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
